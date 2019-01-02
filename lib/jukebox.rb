@@ -43,11 +43,11 @@ end
 
 def run(songs)
    help
-   input = ""
-   until input == "exit"
+   user_response = ""
+   until user_response == "exit"
      puts "Please enter a command:"
-     input = gets.chomp
-     case input
+     user_response = gets.chomp
+     case user_response
      when "play"
        play(songs)
      when "list"
